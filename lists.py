@@ -331,3 +331,70 @@ print(thisislist)
 # reverse() method reverses the current sorting order of the elements
 thisislist.reverse()
 print(thisislist)
+
+
+
+
+# COPY LISTS
+# we cannot directly copy a list simply typing list2 = list1, because:
+# list2 will only be a reference to list1, and changes made in list1 will 
+# automatically also be made in list2
+
+
+# copy() method
+thisList = ['app', 'browser', 'website']
+newList = thisList.copy()
+print(newList)
+
+
+# another way to copy is to use built-in list() method
+newlist1 = list(thisList)
+print(newlist1)
+
+
+# we can also make a copy of a list by using the : (slice) operator
+newlist2 = thisList[:]
+print(newlist2)
+
+
+# JOIN LISTS
+# 1. using + operator
+list1 = ['a','b','c']
+list2 = [1,2,3]
+list3 = list1 + list2
+print(list3)
+
+
+# 2. appending
+# another way to join two lists is by appending all the items from list2 into list1, one by one
+for x in list2:
+    list1.append(x)
+print(list1)
+
+
+# 3. extend() method
+# we can use extend() method, where the purpose is to add elements from one list
+# to another list
+list1.extend(list2)
+print(list1) # to get it's accurate answer in this file , comment out the appending method
+
+
+
+
+
+
+
+
+# LIST METHODS
+# 1. append() : adds an element at the end of the list
+# 2. clear() : removes all the elements from the list
+# 3. copy() : returns a copy of the list
+# 4. count() : returns the number of elements with the specified value
+# 5. extend() : add the elements of a list ( or any iterable),
+#               to the end of the current list
+# 6. index() : returns the index of the first element with the specified value
+# 7. insert() : adds an element at the specified position
+# 8. pop() : removes the element at the specified position
+# 9. remove()  :removes the element at the specified value
+# 10. reverse() : reverses the order of the list
+# 11. sort() : sorts the list
